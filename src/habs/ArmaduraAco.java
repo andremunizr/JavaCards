@@ -14,6 +14,11 @@ public class ArmaduraAco extends Habilidade{
         return atacante.getTipo().name().equals( Elemento.VENTO.name() );
     }
     
+    public Monster ativar( Monster atacante, Monster defensor ){
+        defensor.setHp( defensor.getHp() - atacante.getAtk() );
+        return defensor;
+    }
+    
     @Override
     public boolean condicao() {
         return true;

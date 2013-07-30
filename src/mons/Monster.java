@@ -13,6 +13,7 @@ public class Monster extends Card{
     protected boolean podeDefender = true;
     protected Elemento elemento;
     protected Tipo tipo;
+    protected Integer contadorDeTurnos;
 
     public Integer getHp() {
         return hp;
@@ -61,7 +62,13 @@ public class Monster extends Card{
     public void setTipo(Tipo tipo) {
         this.tipo = tipo;
     }
-    
-    
+
+    public Integer getContadorDeTurnos() {
+        return contadorDeTurnos;
+    }
+
+    public void setContadorDeTurnos(Integer contadorDeTurnos) {
+        this.contadorDeTurnos = contadorDeTurnos;
+    }
     
 }
