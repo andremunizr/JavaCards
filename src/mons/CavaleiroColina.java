@@ -12,8 +12,8 @@ public class CavaleiroColina extends Monster{
      public CavaleiroColina(){
          this.elemento = Elemento.TERRA;
          this.tipo = Tipo.CAVALEIRO;
+         this.hp = 70;
+         this.atk = 15;
      }
-    
-     
-     
+         
 }
