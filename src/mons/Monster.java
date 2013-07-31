@@ -15,7 +15,7 @@ public class Monster extends Card{
     protected Tipo tipo;
     protected Integer contadorDeTurnos;
 
-    public Integer getHp() {
+    public Integer getHp(){
         return hp;
     }
 

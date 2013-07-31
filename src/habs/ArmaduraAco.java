@@ -6,10 +6,13 @@ import mons.Monster;
 
 public class ArmaduraAco extends Habilidade{
     
-    public ArmaduraAco(){
-        this.texto = "Quando cavaleiro da colina é alvo de ataques do tipo vento, o dano é dividido pela metade";
+    public ArmaduraAco(){}
+    
+    public void setTexto( Monster monstro ){
+        
+        this.texto = "Quando " + monstro.getNome() + " é alvo de ataques do tipo vento, o dano é dividido pela metade";
     }
-
+    
     public boolean condicao( Monster atacante ) {
         return atacante.getTipo().name().equals( Elemento.VENTO.name() );
     }

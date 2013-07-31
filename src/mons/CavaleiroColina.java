@@ -14,6 +14,7 @@ public class CavaleiroColina extends Monster{
          this.tipo = Tipo.CAVALEIRO;
          this.hp = 70;
          this.atk = 15;
+         this.hab.setTexto( this );
      }
          
 }

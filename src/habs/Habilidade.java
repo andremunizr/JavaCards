@@ -15,6 +15,5 @@ public abstract class Habilidade {
         this.texto = texto;
     }
     
-    public abstract boolean condicao();    
-    
+    public abstract boolean condicao();        
 }
